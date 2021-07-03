@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+</head>
+<body>
+	<form>
+	Name:
+	<input type="text" id="fname">
+	<br>
+	Surname:
+	<input type="text" id="surname1">
+	<br>
+	Gmail:
+	<input type="text" id="gmail">
+	<br>
+	Designation:
+	<select id="post" name="mydropdown">
+		<option value="Default">Default</option>
+<option value="Chennai">Chennai</option>
+<option value="Bangalore">Bangalore</option>
+<option value="Chennai">Pune</option>
+<option value="Bangalore">Mysore</option>
+<option value="Chennai">Chandigarh</option>
+	</select>
+	<br>
+	DOB:
+	<select name="mydropdown">
+
+
+
+    <option value="2015">1998</option>
+    <option value="2016">1997</option>
+    <option value="2017">1996</option>
+    <option value="2018">1995</option>
+        <option value="2015">1994</option>
+    <option value="2016">1993</option>
+    <option value="2017">1992</option>
+    <option value="2018">1991</option>
+
+
+
+</select>
+<select name="mydropdown">
+	    <option value="1">jan</option>
+    <option value="2">feb</option>
+    <option value="3">mar</option>
+    <option value="4">apr</option>
+        <option value="5">may</option>
+    <option value="6">jun</option>
+    <option value="7">july</option>
+    <option value="8">aug</option>
+        <option value="9">sep</option>
+    <option value="10">oct</option>
+    <option value="11">nov</option>
+    <option value="12">dec</option>
+</select>
+
+	</form>
+<button onclick="validate()"> show data</button>
+<button onclick="delete1()"> delete</button>
+
+<div id="id1"></div>
+<div id="id2"></div>
+<div id="id3"></div>
+<div id="id4"></div>
+</form>
+</body>
+
+	<script type="text/javascript">
+		
+function validate(){
+	var nam2 =document.getElementById('fname').value	
+	var nam3 =document.getElementById('surname1').value
+	var nam4 =document.getElementById('gmail').value
+
+
+	if(nam2 == ""){
+		alert(" fill name")
+		return		
+	}
+	else{
+		alert(nam2)		
+	}
+
+	if(nam3 == ""){
+		alert(" fill surname")
+		return
+	}
+	else{
+		alert(nam3)	
+	}
+
+	if (nam4 == ""){
+		alert("fill gmail")
+		return
+	}
+	else{
+		alert(nam4)
+	}
+	document.getElementById('id1').innerHTML= nam2;
+    document.getElementById('id2').innerHTML= nam3;
+    document.getElementById('id3').innerHTML= nam4;
+	}
+
+function delete1() {
+	var nam2 = document.getElementById('fname').value="";
+	var nam3 = document.getElementById('surname1').value="";
+	var nam4 = document.getElementById('gmail').value="";
+	var nam2 = document.getElementById('id1').innerHTML="";
+	var nam3 = document.getElementById('id2').innerHTML="";
+	var nam4 = document.getElementById('id3').innerHTML="";
+	
+}
+
+	</script>
+
+</html>
